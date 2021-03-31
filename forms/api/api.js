@@ -1,5 +1,5 @@
 // 1. *** use your own url copied from Postman ****
-let requestURL = "https://web.postman.co/workspace/My-Workspace~e7af74ba-255d-4a5f-8a32-0ec1fcb1efda/collection/15185514-6d7c00fb-db10-48d9-be2f-df2e4156a6bb?ctx=documentation"
+let requestURL = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=thai&key=AIzaSyAM41D6qsIUp-SKu-_BPqDSoo0OAtvjGUI&location=41.265331,-95.949364&radius=500&type=restaurant&maxprice=1&rating=>4"
 
 function onXHRLoad() {
     let message = ""
@@ -13,7 +13,7 @@ function onXHRLoad() {
     }
     
     // 2. *** put your textarea control name here ****
-    MessageBox.value = message
+    txtaBestThai.value = message
     
     // if want to add to database call a function here that does that
     // addToDatabase()
@@ -55,7 +55,9 @@ function callAPI(URL) {
 }
 
 // 3. *** add a new button onclick event and put the callAPI code into it ***
-btnClickMe.onclick=function(){
-    // call the code that will make the API call, then process what comes back
+
+
+btnSeeThai.onclick=function(){
+   // call the code that will make the API call, then process what comes back
     callAPI(requestURL)
 }

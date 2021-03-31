@@ -9,7 +9,26 @@
   "borderWidth": "",
   "cached_js": null,
   "cached_js_script_hash": null,
-  "children": [],
+  "children": [
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "api",
+        "Elements",
+        "btnSeeThai.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "api",
+        "Elements",
+        "txtaBestThai.json"
+      ]
+    }
+  ],
   "class": "",
   "designHeight": 0,
   "designWidth": 0,
